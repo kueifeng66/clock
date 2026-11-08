@@ -21,38 +21,16 @@
     <div id="clock2"></div>
 	
     <div class="clock">
-      <!-- Rolex at Rockefeller Center SVG Dial, Fluted 18ct Gold Bezel & Art Deco Steel Case -->
-      <svg class="rolex-dial-svg" viewBox="0 0 500 540" xmlns="http://www.w3.org/2000/svg" aria-label="Rolex Clock at Rockefeller Center">
+      <!-- Rolex SVG Dial, Fluted 18ct Gold Bezel & Circular Case -->
+      <svg class="rolex-dial-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" aria-label="Rolex Clock">
         <defs>
-          <!-- Metallic Silver / Chrome Gradients for Rockefeller Center Art Deco Case -->
-          <linearGradient id="steelBodyGrad" x1="0%" y1="0%" x2="100%" y2="10%">
-            <stop offset="0%" stop-color="#6e7375"/>
-            <stop offset="14%" stop-color="#cfd4d6"/>
-            <stop offset="30%" stop-color="#f5f7f8"/>
-            <stop offset="48%" stop-color="#9ba1a4"/>
-            <stop offset="68%" stop-color="#e4e8ea"/>
-            <stop offset="85%" stop-color="#8b9194"/>
-            <stop offset="100%" stop-color="#555a5c"/>
-          </linearGradient>
+          <!-- Metallic Silver / Chrome Gradients for Circular Case -->
           <linearGradient id="steelRimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stop-color="#f2f5f7"/>
             <stop offset="25%" stop-color="#a7aeb0"/>
             <stop offset="50%" stop-color="#eef2f3"/>
             <stop offset="75%" stop-color="#5d6366"/>
             <stop offset="100%" stop-color="#c8cfd1"/>
-          </linearGradient>
-          <linearGradient id="steelPillarLeft" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#4e5355"/>
-            <stop offset="35%" stop-color="#b8bec0"/>
-            <stop offset="70%" stop-color="#7c8285"/>
-            <stop offset="100%" stop-color="#2e3234"/>
-          </linearGradient>
-          <linearGradient id="steelPillarCenter" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#383c3e"/>
-            <stop offset="25%" stop-color="#9aa0a3"/>
-            <stop offset="52%" stop-color="#e0e4e6"/>
-            <stop offset="80%" stop-color="#696e70"/>
-            <stop offset="100%" stop-color="#2c3032"/>
           </linearGradient>
 
           <!-- 18k Gold Rehaut (Inner Bezel Wall) Gradient -->
@@ -145,40 +123,8 @@
           </filter>
         </defs>
 
-        <!-- ================= ART DECO STAINLESS STEEL CASE SURROUND ================= -->
-        <g id="rockefeller-art-deco-case" filter="url(#caseDropShadow)">
-          <!-- Top Art Deco Serrated Crown Crest (7 stepped zig-zag peaks at the top of the clock) -->
-          <polygon points="142,46 154,22 174,28 186,11 208,19 224,5 240,14 250,2 260,14 276,5 292,19 314,11 326,28 346,22 358,46"
-                   fill="url(#steelBodyGrad)" stroke="#5b6063" stroke-width="1"/>
-          <!-- Faceted 3D triangles on the top Art Deco crest -->
-          <polygon points="154,22 166,36 174,28" fill="#7c8285"/>
-          <polygon points="186,11 198,27 208,19" fill="#7a8083"/>
-          <polygon points="224,5 233,21 240,14" fill="#858b8e"/>
-          <polygon points="250,2 250,20 260,14" fill="#92989b"/>
-          <polygon points="250,2 240,14 250,20" fill="#ffffff" opacity="0.65"/>
-          <polygon points="276,5 267,21 260,14" fill="#e6eaec"/>
-          <polygon points="314,11 302,27 292,19" fill="#d8dde0"/>
-          <polygon points="346,22 334,36 326,28" fill="#eef2f4"/>
-
-          <!-- Stepped Art Deco Upper Shoulders (Left & Right lugs) -->
-          <path d="M 96,92 L 106,42 L 146,38 L 165,24 L 335,24 L 354,38 L 394,42 L 404,92 Z"
-                fill="url(#steelBodyGrad)" stroke="#62686b" stroke-width="1"/>
-          <polygon points="104,52 146,45 138,76 99,84" fill="#e5e9eb" opacity="0.7"/>
-          <polygon points="396,52 354,45 362,76 401,84" fill="#6f7578" opacity="0.7"/>
-
-          <!-- Bottom Art Deco Fluted Stainless Steel Pedestal Base -->
-          <path d="M 90,395 L 102,522 C 103,530 110,535 120,535 L 380,535 C 390,535 397,530 398,522 L 410,395 Z"
-                fill="url(#steelBodyGrad)" stroke="#4c5154" stroke-width="1.2"/>
-          <!-- Left Fluted Pedestal Column -->
-          <polygon points="106,412 162,452 160,534 114,534" fill="url(#steelPillarLeft)" stroke="#3a3e40" stroke-width="0.8"/>
-          <!-- Right Fluted Pedestal Column -->
-          <polygon points="394,412 338,452 340,534 386,534" fill="url(#steelPillarLeft)" stroke="#3a3e40" stroke-width="0.8"/>
-          <!-- Center-Left & Center-Right Stepped Flutes -->
-          <polygon points="162,452 214,475 212,534 160,534" fill="url(#steelBodyGrad)" stroke="#454a4c" stroke-width="0.8"/>
-          <polygon points="338,452 286,475 288,534 340,534" fill="url(#steelBodyGrad)" stroke="#454a4c" stroke-width="0.8"/>
-          <!-- Center Keystone Pedestal Column -->
-          <polygon points="214,475 250,483 286,475 288,534 212,534" fill="url(#steelPillarCenter)" stroke="#3a3e40" stroke-width="0.8"/>
-
+        <!-- ================= CIRCULAR ROLEX WATCH CASE ================= -->
+        <g id="rolex-case" filter="url(#caseDropShadow)">
           <!-- Outer Polished Stainless Steel Bezel Collar -->
           <circle cx="250" cy="250" r="236" fill="url(#steelRimGrad)" stroke="#4c5154" stroke-width="1.2"/>
           <circle cx="250" cy="250" r="230" fill="#593906"/>
@@ -587,7 +533,7 @@
       <!-- ================= ROTATING HANDS ================= -->
       <!-- Hour Hand -->
       <div class="hand hour" hour-hand>
-        <svg viewBox="0 0 500 540" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
           <g>
             <!-- Left & Right 3D Faceted Gold Blade (with rectangular counterweight tail extending to y=282) -->
             <polygon points="243.6,282 250,282 250,140 244.4,140" fill="#e5bc5d" stroke="#7d520e" stroke-width="0.35"/>
@@ -602,7 +548,7 @@
 
       <!-- Minute Hand -->
       <div class="hand minute" min-hand>
-        <svg viewBox="0 0 500 540" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <radialGradient id="centerPinGrad" cx="35%" cy="35%" r="65%">
               <stop offset="0%" stop-color="#ffffff"/>
@@ -624,7 +570,7 @@
 
       <!-- Continuously Sweeping Rolex Second Hand -->
       <div class="hand second" sec-hand>
-        <svg viewBox="0 0 500 540" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="secHandGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stop-color="#f7dd8c"/>
