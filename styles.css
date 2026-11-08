@@ -93,3 +93,48 @@ body {
     z-index: 12;
     filter: drop-shadow(0px 5px 3.5px rgba(28, 18, 4, 0.45));
 }
+
+/* ================= AUTHENTIC DIAMOND SCINTILLATION & BRILLIANCE ================= */
+.diamond-sparkle-glint {
+    transform-origin: 0 0;
+    animation: diamondTwinkle 3.4s ease-in-out infinite;
+    animation-delay: var(--delay, 0s);
+    pointer-events: none;
+    will-change: transform, opacity;
+}
+
+@keyframes diamondTwinkle {
+    0% {
+        opacity: 0.02;
+        transform: scale(0.15) rotate(0deg);
+        filter: none;
+    }
+    42% {
+        opacity: 0.12;
+        transform: scale(0.35) rotate(18deg);
+        filter: none;
+    }
+    54% {
+        opacity: 1;
+        transform: scale(1.2) rotate(45deg);
+        filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.98)) drop-shadow(0 0 8px rgba(120, 230, 255, 0.85)) drop-shadow(0 0 12px rgba(255, 120, 220, 0.5));
+    }
+    66% {
+        opacity: 0.28;
+        transform: scale(0.55) rotate(65deg);
+        filter: none;
+    }
+    100% {
+        opacity: 0.02;
+        transform: scale(0.15) rotate(90deg);
+        filter: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .diamond-sparkle-glint {
+        animation: none;
+        opacity: 0.85;
+        transform: scale(0.7) rotate(25deg);
+    }
+}
